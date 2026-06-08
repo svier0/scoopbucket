@@ -11,6 +11,7 @@
     ]
   ],
   "persist": [
+    "config/RECENT.PROJECT.TABLE"
   ],
   "pre_install": [
     ""
