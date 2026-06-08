@@ -13,6 +13,9 @@
   "persist": [
     "MouseInc.json"
   ],
+  "pre_install": [
+    "if (Test-Path \"$persist_dir/MouseInc.json\") { Remove-Item \"$dir/MouseInc.json\" -Force }"
+  ],
   "checkver": {
     "github": "https://github.com/lhj1618GitHub/MouseInc"
   },
