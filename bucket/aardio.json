@@ -11,11 +11,17 @@
     ]
   ],
   "persist": [
-    "config/RECENT.PROJECT.TABLE"
+    "config"
   ],
-  "pre_install": [
-    ""
-  ],
+  "post_install": [
+    "if (Test-Path \"$persist_dir\\config\\RECENT.PROJECT.TABLE\" -PathType Container) {",
+    "    Remove-Item \"$persist_dir\\config\\RECENT.PROJECT.TABLE\" -Recurse -Force",
+    "}",
+    "Copy-Item \"$dir\\config\\*\" \"$persist_dir\\config\\\" -Recurse -Force",
+    "if (Test-Path \"$persist_dir\\config\\RECENT.PROJECT.TABLE\") {",
+    "    Copy-Item \"$persist_dir\\config\\RECENT.PROJECT.TABLE\" \"$dir\\config\\\" -Force",
+    "}"
+  ]
   "checkver": {
     "url": "http://d.aardio.com/ide/check",
     "jsonpath": "$.version"
