@@ -14,6 +14,14 @@
     "portable"
   ],
   "pre_install": [
+      "# 仅 0.0.8 版本执行二次解压",
+      "if ($version -eq '0.0.8') {",
+      "    $innerZip = Join-Path $dir 'MusicFree-0.0.8-win32-x64-portable.zip'",
+      "    # 二次解压到当前目录",
+      "    Expand-Archive -Path $innerZip -DestinationPath $dir -Force",
+      "    # 删除内层冗余压缩包（可选，精简目录）",
+      "    Remove-Item $innerZip -Force",
+      "}"
   ],
   "checkver": {
     "github": "https://github.com/maotoumao/MusicFreeDesktop"
