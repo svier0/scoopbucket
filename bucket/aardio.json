@@ -21,7 +21,7 @@
     "if (Test-Path \"$persist_dir\\config\\RECENT.PROJECT.TABLE\") {",
     "    Copy-Item \"$persist_dir\\config\\RECENT.PROJECT.TABLE\" \"$dir\\config\\\" -Force",
     "}"
-  ]
+  ],
   "checkver": {
     "url": "http://d.aardio.com/ide/check",
     "jsonpath": "$.version"
