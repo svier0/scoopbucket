@@ -1,5 +1,5 @@
 {
-  "version": "0.0.8",
+  "version": "1.0.0-beta.4",
   "description": "插件化、定制化、无广告的免费音乐播放器",
   "homepage": "https://github.com/maotoumao/MusicFreeDesktop",
   "license": "AGPL-3.0 license",
@@ -14,20 +14,12 @@
     "portable"
   ],
   "pre_install": [
-      "# 仅 0.0.8 版本执行二次解压",
-      "if ($version -eq '0.0.8') {",
-      "    $innerZip = Join-Path $dir 'MusicFree-0.0.8-win32-x64-portable.zip'",
-      "    # 二次解压到当前目录",
-      "    Expand-Archive -Path $innerZip -DestinationPath $dir -Force",
-      "    # 删除内层冗余压缩包（可选，精简目录）",
-      "    Remove-Item $innerZip -Force",
-      "}"
   ],
   "checkver": {
     "github": "https://github.com/maotoumao/MusicFreeDesktop"
   },
-  "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v0.0.8/MusicFree-0.0.8-win32-x64-portable.zip",
-  "hash": "b84ef7feced17a95dd704db9968867726008d782619d511656e5ece059951399",
+  "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v1.0.0-beta.4/MusicFree-1.0.0-beta.4-win32-x64-portable.zip",
+  "hash": "28238ed0a0a2efe01a3b5dcf587a2d92472026ca74ca650d3aebc727ee2ed307",
   "autoupdate": {
     "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v$version/MusicFree-$version-win32-x64-portable.zip"
   }
