@@ -3,12 +3,7 @@
   "description": "MouseInc 2.13.4",
   "homepage": "https://github.com/lhj1618GitHub/MouseInc",
   "license": "-",
-  "bin": [
-    [
-      "MouseInc.exe",
-      "MouseInc"
-    ]
-  ],
+  "bin": "MouseInc.exe",
   "shortcuts": [
     [
       "MouseInc.exe",
@@ -18,11 +13,9 @@
   "checkver": {
     "github": "https://github.com/lhj1618GitHub/MouseInc"
   },
+  "url": "https://github.com/lhj1618GitHub/MouseInc/releases/download/end-2.13.4/MouseInc_A.zip",
+  "hash": "5970e076e8cf111a4ae857ede23d24b6aab63e5ca5ace7d56b8b0109223d9008",
   "autoupdate": {
-    "architecture": {
-      "64bit": {
-        "url": "https://github.com/lhj1618GitHub/MouseInc/releases/download/$version/MouseInc_A.zip"
-      }
-    }
+    "url": "https://github.com/lhj1618GitHub/MouseInc/releases/download/$version/MouseInc_A.zip"
   }
 }
