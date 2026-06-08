@@ -10,6 +10,9 @@
       "MouseInc"
     ]
   ],
+  "persist": [
+    "MouseInc.json"
+  ],
   "checkver": {
     "github": "https://github.com/lhj1618GitHub/MouseInc"
   },
