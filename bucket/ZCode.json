@@ -2,7 +2,7 @@
   "version": "3.0.0",
   "description": "ZCode 是一个面向 Long Horizon Task 的全功能 Agentic Development Environment (ADE)，用于让 AI Agent 端到端、稳定可控地完成跨度更长、步骤更多的开发任务。",
   "homepage": "https://zcode.z.ai",
-  "license": "AGPL-3.0 license",
+  "license": "-",
   "bin": "ZCode.exe",
   "shortcuts": [
     [
