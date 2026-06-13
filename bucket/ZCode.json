@@ -1,0 +1,58 @@
+{
+  "version": "3.0.0",
+  "description": "ZCode 是一个面向 Long Horizon Task 的全功能 Agentic Development Environment (ADE)，用于让 AI Agent 端到端、稳定可控地完成跨度更长、步骤更多的开发任务。",
+  "homepage": "https://zcode.z.ai",
+  "license": "AGPL-3.0 license",
+  "bin": "ZCode.exe",
+  "shortcuts": [
+    [
+      "ZCode.exe",
+      "ZCode"
+    ]
+  ],
+  "depends": "7zip",
+  "pre_install": [
+      "$7z = Get-Command 7z.exe -ErrorAction Stop",
+      "# 提取内层7z包到应用根目录",
+      "& $7z x \"$dir\\`$PLUGINSDIR\\app-64.7z\" -o\"$dir\" -y | Out-Null",
+      "# 清理外层SFX解压残留",
+      "$cleanTargets = @(\"`$PLUGINSDIR\",\"`$R0\",\"uninstallerIcon.ico\")",
+      "foreach($item in $cleanTargets) { if(Test-Path \"$dir\\$item\") { Remove-Item \"$dir\\$item\" -Recurse -Force } }"
+  ],
+  "post_install": [
+      "$userDotZcode = Join-Path $env:USERPROFILE '.zcode'",
+      "$persistDotZcode = $persist_dir",
+      "# 如果用户已有 .zcode 目录，迁移至持久化目录",
+      "if (Test-Path $userDotZcode) {",
+      "    if (-not (Test-Path $persistDotZcode)) {",
+      "        Move-Item $userDotZcode $persistDotZcode -Force",
+      "    } else {",
+      "        Write-Host '警告：持久化目录已存在，保留持久化数据，不迁移用户原有 .zcode'",
+      "        Remove-Item $userDotZcode -Recurse -Force",
+      "    }",
+      "}",
+      "# 创建符号链接指向持久化目录",
+      "if (-not (Test-Path $userDotZcode)) {",
+      "    New-Item -ItemType Junction -Path $userDotZcode -Target $persistDotZcode | Out-Null",
+      "}"
+  ],
+  "pre_uninstall": [
+      "$userDotZcode = Join-Path $env:USERPROFILE '.zcode'",
+      "# 仅删除 junction 链接，不删除持久化真实数据",
+      "if ((Test-Path $userDotZcode) -and ((Get-Item $userDotZcode).LinkType -eq 'Junction')) {",
+      "    Remove-Item $userDotZcode -Force",
+      "}"
+  ],
+  "persist": [
+    ".zcode"
+  ],
+  "checkver": {
+    "url": "https://zcode.z.ai/cn/changelog",
+    "regex": "(\\d+\\.\\d+\\.\\d+) 发布于"
+  }
+  "url": "https://cdn.codegeex.cn/zcode/electron/releases/3.0.0/ZCode-3.0.0-win-x64.exe",
+  "hash": "",
+  "autoupdate": {
+    "url": "https://cdn.codegeex.cn/zcode/electron/releases/$version/ZCode-$version-win-x64.exe"
+  }
+}
