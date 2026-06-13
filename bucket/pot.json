@@ -1,0 +1,31 @@
+{
+  "version": "3.0.7",
+  "description": "跨平台划词翻译和OCR",
+  "homepage": "https://pot-app.com/",
+  "license": "GPL-3.0 license",
+  "bin": "pot.exe",
+  "shortcuts": [
+    [
+      "pot.exe",
+      "pot"
+    ]
+  ],
+  "pre_install": [
+      "$cleanTargets = @(\"`$PLUGINSDIR\",\"`$RTEMP\",\"uninstall.exe\")",
+      "foreach($item in $cleanTargets) { if(Test-Path \"$dir\\$item\") { Remove-Item \"$dir\\$item\" -Recurse -Force } }"
+  ],
+  "post_install": [
+  ],
+  "pre_uninstall": [
+  ],
+  "persist": [
+  ],
+  "checkver": {
+    "github": "https://github.com/pot-app/pot-desktop",
+  },
+  "url": "https://github.com/pot-app/pot-desktop/releases/download/3.0.7/pot_3.0.7_x64-setup.exe",
+  "hash": "",
+  "autoupdate": {
+    "url": "https://github.com/pot-app/pot-desktop/releases/download/$version/pot_$version_x64-setup.exe"
+  }
+}
