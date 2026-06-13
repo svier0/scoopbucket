@@ -49,7 +49,7 @@
   "checkver": {
     "url": "https://zcode.z.ai/cn/changelog",
     "regex": "(\\d+\\.\\d+\\.\\d+) 发布于"
-  }
+  },
   "url": "https://cdn.codegeex.cn/zcode/electron/releases/3.0.0/ZCode-3.0.0-win-x64.exe",
   "hash": "",
   "autoupdate": {
