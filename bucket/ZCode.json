@@ -47,7 +47,7 @@
   ],
   "checkver": {
     "url": "https://zcode.z.ai/cn/changelog",
-    "regex": "\"(\\d+\\.\\d+\\.\\d+)</span><span class=\"text-base text-foreground/50\">发布于"
+    "regex": "(\\d+\\.\\d+\\.\\d+)<\\/span><span class=\"text-base text-foreground\\/50\">发布于"
   },
   "url": "https://cdn.codegeex.cn/zcode/electron/releases/3.0.0/ZCode-3.0.0-win-x64.exe#/dl.7z",
   "hash": "",
