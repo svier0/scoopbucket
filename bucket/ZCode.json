@@ -53,5 +53,8 @@
   "hash": "",
   "autoupdate": {
     "url": "https://cdn.codegeex.cn/zcode/electron/releases/$version/ZCode-$version-win-x64.exe#/dl.7z"
+    "hash": {
+      "mode": "download"
+    }
   }
 }
