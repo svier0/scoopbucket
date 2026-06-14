@@ -52,7 +52,7 @@
   "url": "https://cdn.codegeex.cn/zcode/electron/releases/3.0.0/ZCode-3.0.0-win-x64.exe#/dl.7z",
   "hash": "",
   "autoupdate": {
-    "url": "https://cdn.codegeex.cn/zcode/electron/releases/$version/ZCode-$version-win-x64.exe#/dl.7z"
+    "url": "https://cdn.codegeex.cn/zcode/electron/releases/$version/ZCode-$version-win-x64.exe#/dl.7z",
     "hash": {
       "mode": "download"
     }
