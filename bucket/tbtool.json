@@ -4,7 +4,14 @@
     "homepage": "https://www.tbtool.cn",
     "license": "Unknown",
     "url": "https://apac.tualatin.club/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B1202601.1%E5%AE%89%E8%A3%85%E5%8C%85.exe",
-    "innosetup": true,
+    "installer": {
+        "args": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/DIR=\"$dir\""
+        ]
+    },
     "hash": "255e663a0d45ac2b6b9c018e207afd9cd6b47c702180eebe3fcdb4a006b2bd57",
     "shortcuts": [
         [
