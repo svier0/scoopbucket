@@ -17,11 +17,6 @@
       "History"
     ],
     "checkver": {
-        "url": "https://accounts.viewdepth.cn/deepviewapi/public/pixpin/info",
-        "jsonpath": "$.data.info",
-        "regex": "\"version\":\"(?<version>[\\d\\.]+)\""
-    },
-    "checkver": {
         "url": "https://pixpin.cn/download/",
         "regex": "portableDownloadLink\":\"https://download\\.pixpin\\.cn/PixPin_cn_zh-cn_([\\d.]+)\\.zip\""
     },
