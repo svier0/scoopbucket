@@ -3,11 +3,11 @@
   "description": "ARDM - Another Redis Desktop Manager (Electrobun Port)",
   "homepage": "https://github.com/svier0/ARDM",
   "license": "MIT",
-  "bin": "bin/ardm.exe",
+  "bin": "bin/ARDM.exe",
   "shortcuts": [
     [
-      "bin/ardm.exe",
-      "MusicFree"
+      "bin/ARDM.exe",
+      "ARDM"
     ]
   ],
   "persist": [
