@@ -1,24 +1,25 @@
 {
-  "version": "42.31.6",
-  "description": "aardio 桌面软件快速开发工具 历经 22 年活跃更新。小轻快，永久免费。",
-  "homepage": "https://aardio.com",
-  "license": "-",
-  "bin": "aardio.exe",
-  "shortcuts": [
-    [
-      "aardio.exe",
-      "aardio"
-    ]
-  ],
-  "persist": [
-  ],
-  "checkver": {
-    "url": "http://d.aardio.com/ide/check",
-    "jsonpath": "$.version"
-  },
-  "url": "https://d.aardio.com/ide/aardio.7z",
-  "hash": "29d99543d3a8f243c7bde2ad21e7d0c3f94a86e4941651b82615a5eaa2fb9c2c",
-  "autoupdate": {
-    "url": "https://d.aardio.com/ide/aardio.7z"
-  }
+    "version": "42.47.0",
+    "description": "aardio 桌面软件快速开发工具 历经 22 年活跃更新。小轻快，永久免费。",
+    "homepage": "https://aardio.com",
+    "license": "-",
+    "bin": "aardio.exe",
+    "shortcuts": [
+        [
+            "aardio.exe",
+            "aardio"
+        ]
+    ],
+    "persist": [
+        
+    ],
+    "checkver": {
+        "url": "http://d.aardio.com/ide/check",
+        "jsonpath": "$.version"
+    },
+    "url": "https://d.aardio.com/ide/aardio.7z",
+    "hash": "7885b87c8b5624e680e54a40d1d46b3c9dd6a8d863b292bf4b2aaf4bb3d8e101",
+    "autoupdate": {
+        "url": "https://d.aardio.com/ide/aardio.7z"
+    }
 }
