@@ -15,8 +15,8 @@
   "pre_install": [
   ],
   "checkver": {
-    "url": "https://api.github.com/repos/svier0/ARDM/releases/latest",
-    "regex": "tag_name\": \"([^\"]+)\""
+    "github": "https://github.com/svier0/ARDM",
+    "regex": "(.+)"
   },
   "url": "https://github.com/svier0/ARDM/releases/download/1.7.1.260624-alpha22/ARDM-1.7.1.260624-alpha22-Win64.7z",
   "hash": "0f4bbc5b79996300d3be8083d18caf3ce751e439fd966eb6206c4f41bbdc40b4",
