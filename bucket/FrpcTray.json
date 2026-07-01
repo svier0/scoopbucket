@@ -12,7 +12,8 @@
   ],
   "persist": [
     "conf",
-    "bin"
+    "bin",
+    "log"
   ],
   "pre_install": [
   ],
