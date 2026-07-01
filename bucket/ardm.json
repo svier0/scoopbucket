@@ -20,6 +20,6 @@
   "url": "https://github.com/svier0/ARDM/releases/download/1.7.1.260624-alpha22/ARDM-1.7.1.260624-alpha22-Win64.7z",
   "hash": "0F4BBC5B79996300D3BE8083D18CAF3CE751E439FD966EB6206C4F41BBDC40B4",
   "autoupdate": {
-    "url": "https://github.com/svier0/ARDM/releases/download/1.7.1.260624-alpha22/ARDM-$version-Win64.7z"
+    "url": "https://github.com/svier0/ARDM/releases/download/$version/ARDM-$version-Win64.7z"
   }
 }
