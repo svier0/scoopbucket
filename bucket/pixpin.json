@@ -18,7 +18,7 @@
     ],
     "checkver": {
         "url": "https://pixpin.cn/download/",
-        "regex": "portableDownloadLink\":\"https://download\\.pixpin\\.cn/PixPin_cn_zh-cn_([\\d.]+)\\.zip\""
+        "regex": "id=\"portable-download-link\".*?href=\"https://download\\.pixpin\\.cn/PixPin_cn_zh-cn_([\\d.]+)\\.zip\""
     },
     "autoupdate": {
         "url": "https://download.pixpin.cn/PixPin_cn_zh-cn_$version.zip"
