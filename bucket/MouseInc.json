@@ -17,7 +17,8 @@
     "if (Test-Path \"$persist_dir/MouseInc.json\") { Remove-Item \"$dir/MouseInc.json\" -Force }"
   ],
   "checkver": {
-    "github": "https://github.com/lhj1618GitHub/MouseInc"
+    "github": "https://github.com/lhj1618GitHub/MouseInc",
+    "regex": "tag_name\": \"([^\"]+)\""
   },
   "url": "https://github.com/lhj1618GitHub/MouseInc/releases/download/end-2.13.4/MouseInc_A.zip",
   "hash": "5970e076e8cf111a4ae857ede23d24b6aab63e5ca5ace7d56b8b0109223d9008",
