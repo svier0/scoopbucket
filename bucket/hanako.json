@@ -1,10 +1,10 @@
 {
-    "version": "0.346.15",
+    "version": "0.346.18",
     "description": "Hanako desktop agent",
     "homepage": "https://github.com/liliMozi/openhanako",
     "license": "Apache-2.0",
-    "url": "https://github.com/liliMozi/openhanako/releases/download/v0.346.15/HanaAgent-0.346.15-Windows-x64.exe#/dl.7z",
-    "hash": "737eec317832826c79e96a27985afc872f28f11855281aff3e5450fce68932b8",
+    "url": "https://github.com/liliMozi/openhanako/releases/download/v0.346.18/HanaAgent-0.346.18-Windows-x64.exe#/dl.7z",
+    "hash": "2bdd88bacec6d04fd36e43ccafd202e654462b5dfb96f3dc1caada43074a872a",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
