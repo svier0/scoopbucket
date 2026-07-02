@@ -19,7 +19,7 @@
             "        if (-not $item.LinkType) {",
             "            if (Test-Path \"$Path\\*\") { Move-Item \"$Path\\*\" \"$Target\\\" -Force }",
             "            Remove-Item $Path -Recurse -Force",
-            "        } else { Remove-Item $Path -Force }",
+            "        } else { Remove-Item $Path -Recurse -Force }",
             "    }",
             "    New-Item -ItemType Junction -Path $Path -Target $Target -Force | Out-Null",
             "}",
