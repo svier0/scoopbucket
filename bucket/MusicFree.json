@@ -10,7 +10,6 @@
             "MusicFree"
         ]
     ],
-    "extract_dir": "SoNovel",
     "persist": "portable",
     "pre_install": [
     ],
