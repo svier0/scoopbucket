@@ -12,7 +12,7 @@
             "Remove-Item \"$dir\\uninstallerIcon.ico\" -Force -ErrorAction SilentlyContinue",
             "",
             "# 将运行时目录重定向到 persist_dir，避免污染系统",
-            "if(Test-Path \"$env:USERPROFILE\\.hanako\\.ephemeral\"){ Remove-Item -LiteralPath \"\\?\\$env:USERPROFILE\\.hanako\\.ephemeral\" -Recurse -Force }",
+            "if(Test-Path \"$env:USERPROFILE\\.hanako\\.ephemeral\"){ Remove-Item -LiteralPath \"\\\\?\\$env:USERPROFILE\\.hanako\\.ephemeral\" -Recurse -Force }",
             "function New-Junction { param([string]$Path, [string]$Target)",
             "    if (Test-Path $Path) {",
             "        $item = Get-Item $Path",
