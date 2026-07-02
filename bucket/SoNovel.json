@@ -10,6 +10,7 @@
       "SoNovel"
     ]
   ],
+  "extract_dir": "SoNovel",
   "persist": [
     "downloads"
   ],
