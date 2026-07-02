@@ -8,7 +8,21 @@
     "installer": {
         "script": [
             "Get-ChildItem \"$dir\" -Directory | Where-Object Name -in '$PLUGINSDIR' | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue",
-            "Remove-Item \"$dir\\卸载微信开发者工具.exe.nsis\" -Force -ErrorAction SilentlyContinue"
+            "Remove-Item \"$dir\\卸载微信开发者工具.exe.nsis\" -Force -ErrorAction SilentlyContinue",
+            "",
+            "# 将运行时目录重定向到 persist_dir，避免污染系统",
+            "function New-Junction { param([string]$Path, [string]$Target)",
+            "    if (Test-Path $Path) {",
+            "        $item = Get-Item $Path",
+            "        if (-not $item.LinkType) {",
+            "            if (Test-Path \"$Path\\*\") { Move-Item \"$Path\\*\" \"$Target\\\" -Force }",
+            "            Remove-Item $Path -Recurse -Force",
+            "        } else { Remove-Item $Path -Recurse -Force }",
+            "    }",
+            "    New-Item -ItemType Junction -Path $Path -Target $Target -Force | Out-Null",
+            "}",
+            "New-Item -ItemType Directory -Path \"$persist_dir\\localappdata\" -Force | Out-Null",
+            "New-Junction \"$env:LOCALAPPDATA\\微信开发者工具\" \"$persist_dir\\localappdata\""
         ]
     },
     "bin": "微信开发者工具.exe",
