@@ -11,7 +11,7 @@
     ]
   ],
   "persist": [
-    "downloads"
+    "app"
   ],
   "pre_install": [
     "Rename-Item \"$dir\\TomatoNovelDownloader-Win64-v$version.exe\" \"$dir\\TomatoNovelDownloader.exe\""
