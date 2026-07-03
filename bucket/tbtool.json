@@ -10,6 +10,10 @@
             "/SUPPRESSMSGBOXES",
             "/NORESTART",
             "/DIR=\"$dir\""
+        ],
+        "script":[
+            "Remove-Item \"$dir\\unins000.exe\" -Force -ErrorAction SilentlyContinue",
+            "Remove-Item \"$dir\\unins000.dat\" -Force -ErrorAction SilentlyContinue"
         ]
     },
     "hash": "255e663a0d45ac2b6b9c018e207afd9cd6b47c702180eebe3fcdb4a006b2bd57",
