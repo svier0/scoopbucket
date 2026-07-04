@@ -22,6 +22,7 @@
             "}",
             "New-Item -ItemType Directory -Path \"$persist_dir\\localappdata\" -Force | Out-Null",
             "New-Junction \"$env:LOCALAPPDATA\\NomiFun\" \"$persist_dir\\localappdata\"",
+            ""
         ]
     },
     "uninstaller": {
