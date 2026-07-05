@@ -30,7 +30,7 @@
             "@( \"$env:LOCALAPPDATA\\NomiFun\" ) | ForEach-Object {",
             "    if (Test-Path $_) {",
             "        $item = Get-Item $_",
-            "        if ($item.LinkType -eq 'Junction') { Remove-Item $_ -Force }",
+            "        if ($item.LinkType -eq 'Junction') { Remove-Item $_ -Recurse -Force }",
             "    }",
             "}"
         ]
