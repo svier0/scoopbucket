@@ -2,8 +2,8 @@ on:
   workflow_dispatch:
   schedule:
     # run every 12 hours
-    - cron: "20 */12 * * *"
-name: Excavator
+    - cron: "20 */6 * * *"
+name: 检查更新
 jobs:
   excavate:
     name: Excavate
