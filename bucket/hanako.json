@@ -17,7 +17,7 @@
             "    if (Test-Path $Path) {",
             "        $item = Get-Item $Path",
             "        if (-not $item.LinkType) {",
-            "            if (Test-Path \"$Path\\*\") { Move-Item \"$Path\\*\" \"$Target\\\" -Force }",
+            "            if (Test-Path \"$Path\\*\") { Move-Item \"$Path\\*\" \"$Target\\\" -Recurse -Force }",
             "            Remove-Item $Path -Recurse -Force",
             "        } else { Remove-Item $Path -Recurse -Force }",
             "    }",
