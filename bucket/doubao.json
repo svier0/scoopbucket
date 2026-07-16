@@ -41,7 +41,7 @@
         "regex": "Version:\\s*([0-9.]+)"
     },
     "autoupdate": {
-        "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/2.15.11/Doubao_installer_2.15.11.exe#/dl.7z",
+        "url": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/$version/Doubao_installer_$version.exe#/dl.7z",
         "hash": {
             "url": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/ByteDance/Doubao/$version/ByteDance.Doubao.installer.yaml",
             "regex": "InstallerSha256:\\s+([a-fA-F0-9]{64})"
