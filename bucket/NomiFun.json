@@ -1,10 +1,10 @@
 {
-    "version": "0.2.25",
+    "version": "0.2.28",
     "description": "nomifun ai workstation.",
     "homepage": "https://www.nomifun.com",
     "license": "Apache-2.0",
-    "url": "https://github.com/nomifun/nomifun-tauri/releases/download/v0.2.25/NomiFun_0.2.25_x64-setup.exe#/dl.7z",
-    "hash": "c62f89ceef5cb8130850447d9a727ee7b7750705b40e00ec07a46c909b4b101b",
+    "url": "https://github.com/nomifun/nomifun-tauri/releases/download/v0.2.28/NomiFun_0.2.28_x64-setup.exe#/dl.7z",
+    "hash": "c789e2d643918c40f28a80310bcf842a40657fba877d2fafd4d66042311c1ad5",
     "installer": {
         "script": [
             "Get-ChildItem \"$dir\" -Directory | Where-Object Name -in '$PLUGINSDIR' | Remove-Item -Recurse -Force",
