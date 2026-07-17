@@ -23,11 +23,7 @@
             "    }",
             "    New-Item -ItemType Junction -Path $Path -Target $Target -Force | Out-Null",
             "}",
-            "New-Item -ItemType Directory -Path \"$persist_dir\\appdata\\Hanako\" -Force | Out-Null",
-            "New-Item -ItemType Directory -Path \"$persist_dir\\localappdata\\hanako-updater\" -Force | Out-Null",
             "New-Item -ItemType Directory -Path \"$persist_dir\\home\\.hanako\" -Force | Out-Null",
-            "New-Junction \"$env:APPDATA\\Hanako\" \"$persist_dir\\appdata\\Hanako\"",
-            "New-Junction \"$env:LOCALAPPDATA\\hanako-updater\" \"$persist_dir\\localappdata\\hanako-updater\"",
             "New-Junction \"$env:USERPROFILE\\.hanako\" \"$persist_dir\\home\\.hanako\""
         ]
     },
