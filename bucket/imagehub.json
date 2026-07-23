@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "description": "cli tools for imagehub",
+  "homepage": "https://github.com/svier0/imagehub",
+  "license": "MIT",
+  "bin": "imagehub.exe",
+  "persist": [
+    "config.ini"
+  ],
+  "checkver": "github",
+  "url": "https://github.com/svier0/imagehub/releases/download/0.1.0/imagehub-0.1.0-x86_64-pc-windows-msvc.7z#/dl.7z",
+  "hash": "f2e88a3f02be5f017973ee2dcfbcd8d468cd403c8b4633c99e3231929ddbca56",
+  "autoupdate": {
+    "url": "https://github.com/svier0/imagehub/releases/download/$version/imagehub-$version-x86_64-pc-windows-msvc.7z#/dl.7z"
+  }
+}
