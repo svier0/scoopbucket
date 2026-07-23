@@ -21,6 +21,10 @@
   "url": "https://github.com/svier0/FrpcTray/releases/download/v2.0.1/FrpcTray_2.0.1_x64_setup_windows.exe#/dl.7z",
   "hash": "sha256:a1da5f9365f501ea792703a4b7370f7f1099a0c11bbb80d73b03ce2eadf467f7",
   "autoupdate": {
-    "url": "https://github.com/svier0/FrpcTray/releases/download/v$version/FrpcTray_$version_x64_setup_windows.exe#/dl.7z"
+    "url": "https://github.com/svier0/FrpcTray/releases/download/v$version/FrpcTray_$version_x64_setup_windows.exe#/dl.7z",
+    "hash": {
+        "url": "https://api.github.com/repos/svier0/FrpcTray/releases/tags/v$version",
+        "regex": "\"name\":\\s*\"FrpcTray$version_x64_setup_windows\\.exe\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+    }
   }
 }
