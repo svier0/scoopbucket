@@ -10,9 +10,13 @@
         "New-Item -ItemType Directory -Path $app -Force | Out-Null",
         "Get-ChildItem -Path $dir | Where-Object { $_.Name -ne \"app-$version\" } | Move-Item -Destination $app -Force",
         "Move-Item -Path \"$app\\GitHubDesktop_ExecutionStub.exe\" -Destination \"$dir\\GitHubDesktop.exe\"",
-        "Invoke-WebRequest -Uri 'https://desktop.githubusercontent.com/app-icon.ico' -OutFile \"$dir\\app.ico\" -UseBasicParsing"
+        "Invoke-WebRequest -Uri 'https://desktop.githubusercontent.com/app-icon.ico' -OutFile \"$dir\\app.ico\" -UseBasicParsing",
+        "$bin = Join-Path $dir 'bin'",
+        "New-Item -ItemType Directory -Path $bin -Force | Out-Null",
+        "Set-Content -Path \"$bin\\github.bat\" -Value ('@echo off' + \"`r`n\" + 'setlocal' + \"`r`n\" + 'set ELECTRON_RUN_AS_NODE=1' + \"`r`n\" + ('call \"%~dp0..\\app-' + $version + '\\GitHubDesktop.exe\" \"%~dp0..\\app-' + $version + '\\cli.js\" %*') + \"`r`n\" + 'endlocal')",
+        ""
     ],
-    "bin": "app-$version\\resources\\app\\static\\github.bat",
+    "bin": "bin\\github.bat",
     "shortcuts": ["GitHubDesktop.exe", "GitHub Desktop"],
     "checkver": "github",
     "autoupdate": {
