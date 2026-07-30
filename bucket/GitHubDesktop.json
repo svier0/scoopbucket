@@ -13,7 +13,7 @@
         "Invoke-WebRequest -Uri 'https://desktop.githubusercontent.com/app-icon.ico' -OutFile \"$dir\\app.ico\" -UseBasicParsing",
         "$bin = Join-Path $dir 'bin'",
         "New-Item -ItemType Directory -Path $bin -Force | Out-Null",
-        "Set-Content -Path \"$bin\\github.bat\" -Value ('@echo off' + \"`r`n\" + \"%~dp0\\..\\app-' + $version + '\\resources\\app\\static\\github.bat\" %*')",
+        "Set-Content -Path \"$bin\\github.bat\" -Value ('@echo off' + \"`r`n\" + \"%~dp0..\\app-\" + $version + '\\resources\\app\\static\\github.bat\" %*')",
         ""
     ],
     "bin": "bin\\github.bat",
