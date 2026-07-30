@@ -17,7 +17,7 @@
         ""
     ],
     "bin": "bin\\github.bat",
-    "shortcuts": ["GitHubDesktop.exe", "GitHub Desktop"],
+    "shortcuts": [["GitHubDesktop.exe", "GitHub Desktop"]],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/zetaloop/desktop/releases/download/release-$version/GitHubDesktop-$version-full.nupkg",
