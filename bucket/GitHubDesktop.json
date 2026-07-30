@@ -1,0 +1,25 @@
+{
+    "version": "3.5.8",
+    "homepage": "https://github.com/zetaloop/desktop",
+    "license": "MIT",
+    "url": "https://github.com/zetaloop/desktop/releases/download/release-3.5.8/GitHubDesktop-3.5.8-full.nupkg",
+    "hash": "10c48f8227a8c520d75f39630d1f6a643782426ecbd3b8d2320b8cc80cb36ab2",
+    "extract_dir": "lib\\net45",
+    "pre_install": [
+        "$app = Join-Path $dir \"app-$version\"",
+        "New-Item -ItemType Directory -Path $app -Force | Out-Null",
+        "Get-ChildItem -Path $dir | Where-Object { $_.Name -ne \"app-$version\" } | Move-Item -Destination $app -Force",
+        "Move-Item -Path \"$app\\GitHubDesktop_ExecutionStub.exe\" -Destination \"$dir\\GitHubDesktop.exe\"",
+        "Invoke-WebRequest -Uri 'https://desktop.githubusercontent.com/app-icon.ico' -OutFile \"$dir\\app.ico\" -UseBasicParsing"
+    ],
+    "bin": "app-$version\\resources\\app\\static\\github.bat",
+    "shortcuts": ["GitHubDesktop.exe", "GitHub Desktop"],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/zetaloop/desktop/releases/download/release-$version/GitHubDesktop-$version-full.nupkg",
+        "hash": {
+            "url": "https://api.github.com/repos/zetaloop/desktop/releases/tags/release-$version",
+            "regex": "\"name\":\\s*\"GitHubDesktop-$version-full\\.nupkg\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+        }
+    }
+}
