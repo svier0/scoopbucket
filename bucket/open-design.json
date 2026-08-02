@@ -1,0 +1,32 @@
+{
+  "version": "0.16.1",
+  "description": "Open-source local-first alternative to Anthropic's Claude Design. Turns coding agents into a design engine.",
+  "homepage": "https://github.com/nexu-io/open-design",
+  "license": "Apache-2.0",
+  "url": "https://github.com/nexu-io/open-design/releases/download/open-design-v0.16.1/open-design-0.16.1-win-x64-setup.exe#/dl.7z",
+  "hash": "8d6712a522517de9ff7ca996645442f4e23e4df6f1e95681c8603d94ba5bf7ea",
+  "depends": [],
+  "suggest": [],
+  "notes": [],
+  "bin": "Open Design.exe",
+  "shortcuts": [
+    ["Open Design.exe", "Open Design"]
+  ],
+  "pre_install": [
+    "7z x \"$dir\\$PLUGINSDIR\\payload-base.7z\" -o\"$dir\" -y",
+    "7z x \"$dir\\$PLUGINSDIR\\payload-overlay.7z\" -o\"$dir\" -y",
+    "Remove-Item -Recurse -Force \"$dir\\$PLUGINSDIR\"",
+    "Remove-Item -Force \"$dir\\Uninstall Open Design.exe\""
+  ],
+  "checkver": {
+    "github": "https://api.github.com/repos/nexu-io/open-design/releases/latest",
+    "regex": "open-design-v([\\d.]+)"
+  },
+  "autoupdate": {
+    "url": "https://github.com/nexu-io/open-design/releases/download/open-design-v$version/open-design-$version-win-x64-setup.exe#/dl.7z",
+    "hash": {
+      "url": "https://api.github.com/repos/nexu-io/open-design/releases/tags/open-design-v$version",
+      "regex": "\"name\":\\s*\"open-design-$version-win-x64-setup\\.exe\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+    }
+  }
+}
