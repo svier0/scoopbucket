@@ -13,9 +13,9 @@
     ["Open Design.exe", "Open Design"]
   ],
   "pre_install": [
-    "7z x \"$dir\\$PLUGINSDIR\\payload-base.7z\" -o\"$dir\" -y",
-    "7z x \"$dir\\$PLUGINSDIR\\payload-overlay.7z\" -o\"$dir\" -y",
-    "Remove-Item -Recurse -Force \"$dir\\$PLUGINSDIR\"",
+    "7z x \"$dir\\`$PLUGINSDIR\\payload-base.7z\" -o\"$dir\" -y",
+    "7z x \"$dir\\`$PLUGINSDIR\\payload-overlay.7z\" -o\"$dir\" -y",
+    "Remove-Item -Recurse -Force \"$dir\\`$PLUGINSDIR\"",
     "Remove-Item -Force \"$dir\\Uninstall Open Design.exe\""
   ],
   "checkver": {
