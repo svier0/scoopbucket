@@ -16,13 +16,13 @@
   "pre_install": [
   ],
   "checkver": "github",
-  "url": "https://github.com/svier0/gfwsni/releases/download/v2.0.1/gfwsni_2.0.1_x64_setup_windows.exe#/dl.7z",
+  "url": "https://github.com/svier0/gfwsni/releases/download/v2.0.1/gfwsni_2.0.1_x64_setup.exe#/dl.7z",
   "hash": "sha256:bcd8f94133540682f2040a7e035972972badbf85e2ecd8e2ae6281aa6f226ab9",
   "autoupdate": {
-    "url": "https://github.com/svier0/gfwsni/releases/download/v$version/gfwsni_$version_x64_setup_windows.exe#/dl.7z",
+    "url": "https://github.com/svier0/gfwsni/releases/download/v$version/gfwsni_$version_x64_setup.exe#/dl.7z",
     "hash": {
         "url": "https://api.github.com/repos/svier0/gfwsni/releases/tags/v$version",
-        "regex": "\"name\":\\s*\"gfwsni_$version_x64_setup_windows\\.exe\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+        "regex": "\"name\":\\s*\"gfwsni_$version_x64_setup\\.exe\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
     }
   }
 }
