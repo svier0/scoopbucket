@@ -22,8 +22,8 @@
     "autoupdate": {
         "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v$version/MusicFree-$version-win32-x64-portable.zip",
         "hash": {
-            "url": "https://api.github.com/repos/nomifun/nomifun-tauri/releases/tags/v$version",
-            "regex": "\"name\":\\s*\"NomiFun_$version_x64-setup\\.exe\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+            "url": "https://api.github.com/repos/maotoumao/MusicFreeDesktop/releases/tags/v$version",
+            "regex": "\"name\":\\s*\"MusicFree-$version-win32-x64-portable\\.zip\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
         }
     }
 }
