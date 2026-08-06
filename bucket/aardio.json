@@ -1,5 +1,5 @@
 {
-    "version": "43.9.1",
+    "version": "43.9.2",
     "description": "aardio 桌面软件快速开发工具 历经 22 年活跃更新。小轻快，永久免费。",
     "homepage": "https://aardio.com",
     "license": "-",
@@ -18,7 +18,7 @@
         "jsonpath": "$.version"
     },
     "url": "https://d.aardio.com/ide/aardio.7z",
-    "hash": "db56202206f04c10c5dee718f8737a13483d448981a8dba49fbe73d0a30d96a0",
+    "hash": "7dbf5036bbf166fca601a9200f4a371bd2366197a3b388cda9a59aa13469b574",
     "autoupdate": {
         "url": "https://d.aardio.com/ide/aardio.7z"
     }
