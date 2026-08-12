@@ -18,7 +18,10 @@
     ],
     "bin": "bin\\github.bat",
     "shortcuts": [["GitHubDesktop.exe", "GitHub Desktop"]],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/zetaloop/desktop",
+        "regex": "\"tag_name\"\\s*:\\s*\"release-([^\"]+)\""
+    },
     "autoupdate": {
         "url": "https://github.com/zetaloop/desktop/releases/download/release-$version/GitHubDesktop-$version-full.nupkg",
         "hash": {
