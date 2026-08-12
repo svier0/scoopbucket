@@ -13,7 +13,7 @@
         "url": "https://github.com/svier0/imagehub/releases/download/$version/imagehub-$version-x86_64-pc-windows-msvc.7z#/dl.7z",
         "hash": {
             "url": "https://api.github.com/repos/svier0/imagehub/releases/tags/$version",
-            "regex": "\"name\":\\s*\"imagehub-$version-x86_64-pc-windows-msvc\\.7z\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+            "regex": "\"name\":\\s*\"x86_64-pc-windows-msvc\\.7z\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
         }
     }
 }
