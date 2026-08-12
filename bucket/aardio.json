@@ -11,7 +11,6 @@
         ]
     ],
     "persist": [
-        
     ],
     "checkver": {
         "url": "http://d.aardio.com/ide/check",
