@@ -17,8 +17,7 @@
   "pre_install": [
   ],
   "checkver": {
-    "github": "https://github.com/freeok/so-novel",
-    "regex": "\"tag_name\"\\s*:\\s*\"([^\"]+)\""
+    "github": "https://github.com/freeok/so-novel"
   },
   "url": "https://github.com/freeok/so-novel/releases/download/v1.11.0/sonovel-windows.tar.gz",
   "hash": "0b3e0a584f3d41ce9f6f8698a3127d430ac364474b2ea739389d5a889e9975e3",
