@@ -33,7 +33,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html"
+        "url": "https://devtools.wxqcloud.qq.com.cn/WechatWebDev/nightly/versions/config.json",
+        "jsonpath": "$.channels[0].version",
     },
     "autoupdate": {
         "url": "https://servicewechat.com/wxa-dev-logic/download_redirect?type=win32_x64&from=mpwiki&download_version=$($version -replace '\\.','')&version_type=1#/dl.7z",
