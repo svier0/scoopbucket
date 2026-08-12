@@ -7,10 +7,10 @@
     "persist": "config.ini",
     "pre_install": "if (!(Test-Path \"$persist_dir\\config.ini\")) { New-Item \"$dir\\config.ini\" -ItemType File -Force }",
     "checkver": "github",
-    "url": "https://github.com/svier0/imagehub/releases/download/0.3.2/imagehub-0.3.2-x86_64-pc-windows-msvc.7z#/dl.7z",
+    "url": "https://github.com/svier0/imagehub/releases/download/0.3.2/x86_64-pc-windows-msvc.7z#/dl.7z",
     "hash": "sha256:f9ef079b9467abc8633e23d2b42e729092bae9547515629f95da626ea0df9d33",
     "autoupdate": {
-        "url": "https://github.com/svier0/imagehub/releases/download/$version/imagehub-$version-x86_64-pc-windows-msvc.7z#/dl.7z",
+        "url": "https://github.com/svier0/imagehub/releases/download/$version/x86_64-pc-windows-msvc.7z#/dl.7z",
         "hash": {
             "url": "https://api.github.com/repos/svier0/imagehub/releases/tags/$version",
             "regex": "\"name\":\\s*\"x86_64-pc-windows-msvc\\.7z\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
