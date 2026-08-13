@@ -13,22 +13,11 @@
         ]
     ],
     "post_install": [
-        "# 数据迁移",
-        "$runtimeCache = \"$env:LocalAppData\\Doubao\\User Data\"",
-        "$runtimeCachePersist = \"$persist_dir\\User Data\"",
-        "if (Test-Path $runtimeCachePersist) {",
-        "    Remove-Item -Path $runtimeCache -Force -Recurse -ErrorAction SilentlyContinue",
-        "} elseif (Test-Path $runtimeCache) {",
-        "    Move-Item -Path $runtimeCache -Destination $runtimeCachePersist -Force",
-        "}",
-        "New-DirectoryJunction $runtimeCache $runtimeCachePersist | Out-Null"
     ],
     "post_uninstall": [
-        "# 删除数据软连接",
-        "$runtimeCache = \"$env:LocalAppData\\Doubao\\User Data\"",
-        "Remove-Item -Path $runtimeCache -Force -Recurse -ErrorAction SilentlyContinue"
     ],
-    "persist": "User Data",
+    "persist": [
+    ],
     "checkver": {
         "script": [
             "$prefix = 'https://github.com/SpecterShell/Dumplings/raw/refs/heads/main/Tasks/ByteDance.Doubao'",
