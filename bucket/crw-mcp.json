@@ -3,7 +3,7 @@
   "description": "Fast, lightweight Firecrawl/Tavily alternative in Rust.",
   "homepage": "https://github.com/us/crw/releases",
   "license": "AGPL-3.0",
-  "bin": "crw-mcp.exe",
+  "bin": "crw.exe",
   "shortcuts": [
   ],
   "persist": [
@@ -11,13 +11,13 @@
   "pre_install": [
   ],
   "checkver": "github",
-  "url": "https://github.com/us/crw/releases/download/v0.30.0/crw-mcp-win32-x64.zip",
-  "hash": "sha256:8b1c7f9b1eb4f468042601023baf8b69acd011730691fae2b5af966b39dd766b",
+  "url": "https://github.com/us/crw/releases/download/v0.30.0/crw-win32-x64.zip",
+  "hash": "sha256:17a238762724d6f8a57aa60d8605e670af69f222929f9f8a47289f9ff78c133a",
   "autoupdate": {
-    "url": "https://github.com/us/crw/releases/download/v$version/crw-mcp-win32-x64.zip",
+    "url": "https://github.com/us/crw/releases/download/v$version/crw-win32-x64.zip",
     "hash": {
         "url": "https://api.github.com/repos/us/crw/releases/tags/v$version",
-        "regex": "\"name\":\\s*\"crw-mcp-win32-x64\\.zip\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+        "regex": "\"name\":\\s*\"crw-win32-x64\\.zip\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
     }
   }
 }
