@@ -1,10 +1,10 @@
 {
-    "version": "2.01.2510290",
+    "version": "2.02.2608040",
     "description": "微信开发者工具",
     "homepage": "https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html",
     "license": "-",
-    "url": "https://servicewechat.com/wxa-dev-logic/download_redirect?type=win32_x64&from=mpwiki&download_version=2012510290&version_type=1#/dl.7z",
-    "hash": "f817db8dd71c9a9b27583c18a17c300144314162ca7b7f944b6262c458b127f7",
+    "url": "https://servicewechat.com/wxa-dev-logic/download_redirect?type=win32_x64&from=mpwiki&download_version=$(2.02.2608040 -replace '\\.','')&version_type=1#/dl.7z",
+    "hash": "a6a7fdd01be1bfd3349bc28d7af2d2e661523287093a8ffbab0056add0905dc3",
     "installer": {
         "script": [
             "Get-ChildItem \"$dir\" -Directory | Where-Object Name -in '$PLUGINSDIR' | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue",
@@ -39,7 +39,7 @@
     "autoupdate": {
         "url": "https://servicewechat.com/wxa-dev-logic/download_redirect?type=win32_x64&from=mpwiki&download_version=$($version -replace '\\.','')&version_type=1#/dl.7z",
         "hash": {
-          "mode": "download"
+            "mode": "download"
         }
     }
 }
