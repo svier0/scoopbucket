@@ -18,7 +18,7 @@
             "} else {",
             "    New-Item -ItemType Directory \"$persist_dir\\app\" | Out-Null",
             "}",
-            "Move-Item \"$dir\\TomatoNovelDownloader.exe\" \"$persist_dir\\app\\\""
+            "Move-Item \"$dir\\TomatoNovelDownloader.exe\" \"$persist_dir\\app\\\" -Force"
         ]
     },
     "checkver": {
