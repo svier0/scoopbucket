@@ -16,9 +16,9 @@
         "script": [
             "if (Test-Path \"$persist_dir\\app\") {",
             "} else {",
-            "    New-Item -ItemType Directory \"$dir\\app\" | Out-Null",
+            "    New-Item -ItemType Directory \"$persist_dir\\app\" | Out-Null",
             "}",
-            "    Move-Item \"$dir\\TomatoNovelDownloader.exe\" \"$dir\\app\\\""
+            "Move-Item \"$dir\\TomatoNovelDownloader.exe\" \"$persist_dir\\app\\\""
         ]
     },
     "checkver": {
