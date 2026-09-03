@@ -11,14 +11,14 @@
         ]
     ],
     "persist": "app",
-    "pre_install": "New-Item -ItemType Directory \"$dir\\app\" | Out-Null;Rename-Item \"$dir\\TomatoNovelDownloader-Win64-v$version.exe\" \"$dir\\app\\TomatoNovelDownloader.exe\"",
+    "pre_install": "New-Item -ItemType Directory \"$dir\\app\" | Out-Null;Move-Item \"$dir\\TomatoNovelDownloader-Win64-v$version.exe\" \"$dir\\app\\TomatoNovelDownloader.exe\"",
     "installer": {
         "script": [
             "if (Test-Path \"$persist_dir\\app\") {",
             "} else {",
             "    New-Item -ItemType Directory \"$persist_dir\\app\" | Out-Null",
             "}",
-            "Move-Item \"$dir\\app\\TomatoNovelDownloader.exe\" \"$persist_dir\\app\\\" -Force"
+            "Copy-Item \"$dir\\app\\TomatoNovelDownloader.exe\" \"$persist_dir\\app\\\" -Force"
         ]
     },
     "checkver": {
