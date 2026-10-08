@@ -13,13 +13,10 @@
         ]
     ],
     "post_install": [
-        
     ],
     "post_uninstall": [
-        
     ],
     "persist": [
-        
     ],
     "checkver": {
         "script": [
