@@ -1,0 +1,32 @@
+{
+    "version": "0.3.0",
+    "description": "Photoshop",
+    "homepage": "https://getartcraft.com/apps/photocraft",
+    "license": "MIT,Apache2.0",
+    "url": "https://github.com/storytold/photocraft/releases/download/v0.3.0/photocraft-0.3.0-windows-x64-portable.zip",
+    "hash": "9997f7df3a6f0717b46bb0f503b3d920c3beedeb9e9c4e1ff2ef3b8671acd47e",
+    "extract_dir": "photocraft-0.3.0-windows-x64-portable",
+    "post_install": [
+    ],
+    "post_uninstall": [
+    ],
+    "persist": [
+    ]
+    "bin": "photocraft.exe",
+    "shortcuts": [
+        [
+            "photocraft.exe",
+            "PhotoCraft"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/storytold/photocraft"
+    },
+    "autoupdate": {
+        "url": "https://github.com/storytold/photocraft/releases/download/v$version/photocraft-$version-windows-x64-portable.zip",
+        "hash": {
+            "url": "https://api.github.com/repos/storytold/photocraft/releases/tags/v$version",
+            "regex": "\"name\":\\s*\"photocraft-$version-windows-x64-portable\\.zip\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+        }
+    }
+}
