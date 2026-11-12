@@ -1,10 +1,10 @@
 {
-    "version": "0.22.0",
+    "version": "0.23.1",
     "description": "Photoshop",
     "homepage": "https://getartcraft.com/apps/photocraft",
     "license": "MIT,Apache2.0",
-    "url": "https://github.com/storytold/photocraft/releases/download/v0.22.0/photocraft-0.22.0-windows-x64-portable.zip",
-    "hash": "d6e13cd7de440d9aae5964aaf70b15762b64dc05127155c3e2f06308f153e46b",
+    "url": "https://github.com/storytold/photocraft/releases/download/v0.23.1/photocraft-0.23.1-windows-x64-portable.zip",
+    "hash": "6317e764ecfa804227c38079311bea489283ab383ef040c81ef2fd6d86bd60b1",
     "extract_dir": "photocraft-0.3.0-windows-x64-portable",
     "post_install": [
         
