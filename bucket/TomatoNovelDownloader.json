@@ -1,5 +1,5 @@
 {
-    "version": "2.4.17",
+    "version": "2.4.18",
     "description": "番茄小说下载器",
     "homepage": "https://github.com/zhongbai2333/Tomato-Novel-Downloader",
     "license": "MIT",
@@ -24,8 +24,8 @@
     "checkver": {
         "github": "https://github.com/zhongbai2333/Tomato-Novel-Downloader"
     },
-    "url": "https://github.com/zhongbai2333/Tomato-Novel-Downloader/releases/download/v2.4.17/TomatoNovelDownloader-Win64-v2.4.17.exe",
-    "hash": "d1a14464caaa67d14d374f3e483ed11f8e4c90c64308809e5dcfaaecaaa0f364",
+    "url": "https://github.com/zhongbai2333/Tomato-Novel-Downloader/releases/download/v2.4.18/TomatoNovelDownloader-Win64-v2.4.18.exe",
+    "hash": "c905bfa60ffafd1ad0112584c4161d41fe96bdcc1529b940141e2834784791dd",
     "autoupdate": {
         "url": "https://github.com/zhongbai2333/Tomato-Novel-Downloader/releases/download/v$version/TomatoNovelDownloader-Win64-v$version.exe"
     }
