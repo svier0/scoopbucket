@@ -1,0 +1,32 @@
+{
+    "version": "0.49.1",
+    "description": "solidcraft",
+    "homepage": "https://solidcraft.io",
+    "license": "Apache2.0",
+    "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.49.1/solidcraft-0.49.1-windows-x64-portable.zip",
+    "hash": "1bf84ea12c8e98949441b7aea2ce97305aeafb4b1b82795797bd4012bbd3b90f",
+    "extract_dir": "solidcraft-0.49.1-windows-x64-portable",
+    "post_install": [
+    ],
+    "post_uninstall": [
+    ],
+    "persist": [
+    ],
+    "bin": "solidcraft.exe",
+    "shortcuts": [
+        [
+            "solidcraft.exe",
+            "SolidCraft"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/tangency-labs/solidcraft"
+    },
+    "autoupdate": {
+        "url": "https://github.com/tangency-labs/solidcraft/releases/download/v$version/solidcraft-$version-windows-x64-portable.zip",
+        "hash": {
+            "url": "https://api.github.com/repos/tangency-labs/solidcraft/releases/tags/v$version",
+            "regex": "\"name\":\\s*\"solidcraft-$version-windows-x64-portable\\.zip\"[^}]*\"digest\":\\s*\"sha256:([a-f0-9]{64})\""
+        }
+    }
+}
