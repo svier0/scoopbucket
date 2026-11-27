@@ -1,10 +1,10 @@
 {
-    "version": "0.50.0",
+    "version": "0.51.1",
     "description": "solidcraft",
     "homepage": "https://solidcraft.io",
     "license": "Apache2.0",
-    "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.50.0/solidcraft-0.50.0-windows-x64-portable.zip",
-    "hash": "f9b5be186e966e839af6b1a9bf32dfd0e0663cace9ba91f091ef8d99893a965a",
+    "url": "https://github.com/tangency-labs/solidcraft/releases/download/v0.51.1/solidcraft-0.51.1-windows-x64-portable.zip",
+    "hash": "32677db5dccf9c626abbb93ecadf2b9b43046aea7b11b169f8682e6ac3b0545f",
     "extract_dir": "solidcraft-0.49.1-windows-x64-portable",
     "post_install": [
         
